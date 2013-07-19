@@ -3,25 +3,30 @@
 	margin: -5px 0 15px !important;
 }
 
+.field-repeater-hide-toggle {
+	float:right;
+	margin: -5px 0 15px 15px !important;
+}
+
 .acf_flexible_content,
 .repeater {
   clear: both;
 }
 
-.collapsed-repeater .acf_input-wrap tr {
+.collapsed-repeater .acf_input-wrap tr, .hidden-repeater .acf-input-table tr {
 	display: none;
 }
 
-.collapsed-repeater .acf_input-wrap tr:first-child {
+.collapsed-repeater .acf_input-wrap tr:first-child, .hidden-repeater .acf-input-table tr:first-child {
 	display: table-row;
 }
 
-.collapsed-repeater .acf_input {
+.collapsed-repeater .acf_input, .hidden-repeater .acf-input-table  {
 	position: relative;
 }
 
 /* "Masks" the first field in order to prevent clicking on it */
-.collapsed-repeater .acf_input:after {
+.collapsed-repeater .acf_input:after, .hidden-repeater .acf-input-table:after {
 	position: absolute;
 	top: 0; bottom: 0; left: 0px; right: 0;
 	display: block;
